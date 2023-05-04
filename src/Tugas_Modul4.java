@@ -24,7 +24,7 @@ public class Tugas_Modul4 {
                 System.out.print("Masukkan berat badan Anda (kg): ");
                 berat = input.nextDouble();
 
-System.out.print("Masukkan tinggi badan Anda (cm): ");
+                System.out.print("Masukkan tinggi badan Anda (cm): ");
                 tinggi = input.nextDouble();
                 tinggiM = tinggi / 100.0;
                 break;
@@ -37,7 +37,7 @@ System.out.print("Masukkan tinggi badan Anda (cm): ");
         int bmi = hitungBMI(berat, tinggiM);
         System.out.println("BMI Anda adalah: " + bmi);
 
-if (bmi < 18.5) {
+        if (bmi < 18.5) {
             System.out.println("Anda termasuk dalam kategori kurus.");
         } else if (bmi >= 18.5 && bmi < 25) {
             System.out.println("Anda termasuk dalam kategori ideal.");
