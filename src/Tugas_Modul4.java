@@ -12,3 +12,14 @@ public class Tugas_Modul4 {
         System.out.println("Alia Niswah 21120122130063");
         System.out.println("Annisa Charisma 21120122140086");
         System.out.println("Melisa Novpriyanti H. 21120122140125\n");
+
+        Scanner input = new Scanner(System.in);
+        double berat, tinggi, tinggiM;
+
+        System.out.println("=================================================");
+        System.out.println("            Body Mass Index Calculator           ");
+        System.out.println("=================================================");
+        while (true) {
+            try {
+                System.out.print("Masukkan berat badan Anda (kg): ");
+                berat = input.nextDouble();
