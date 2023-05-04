@@ -24,6 +24,19 @@ public class Tugas_Modul4 {
                 System.out.print("Masukkan berat badan Anda (kg): ");
                 berat = input.nextDouble();
 
+System.out.print("Masukkan tinggi badan Anda (cm): ");
+                tinggi = input.nextDouble();
+                tinggiM = tinggi / 100.0;
+                break;
+            } catch (Exception e) {
+                System.out.print("Input yang anda masukkan salah. Silahkan coba lagi.");
+                input.nextLine();
+            }
+        }
+
+        int bmi = hitungBMI(berat, tinggiM);
+        System.out.println("BMI Anda adalah: " + bmi);
+
 if (bmi < 18.5) {
             System.out.println("Anda termasuk dalam kategori kurus.");
         } else if (bmi >= 18.5 && bmi < 25) {
