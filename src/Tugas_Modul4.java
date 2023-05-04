@@ -23,3 +23,18 @@ public class Tugas_Modul4 {
             try {
                 System.out.print("Masukkan berat badan Anda (kg): ");
                 berat = input.nextDouble();
+
+if (bmi < 18.5) {
+            System.out.println("Anda termasuk dalam kategori kurus.");
+        } else if (bmi >= 18.5 && bmi < 25) {
+            System.out.println("Anda termasuk dalam kategori ideal.");
+        } else if (bmi >= 25 && bmi < 30) {
+            System.out.println("Anda termasuk dalam kategori gemuk.");
+        } else {
+            System.out.println("Anda termasuk dalam kategori obesitas.");
+        }
+
+        System.exit(0);
+
+    }
+}
